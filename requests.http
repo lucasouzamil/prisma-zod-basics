@@ -1,0 +1,28 @@
+GET http://localhost:3333/memories
+
+###
+GET http://localhost:3333/memories/5f82f68f-2ea4-4b3d-b17e-6a4811e9b5fa
+
+
+###
+POST http://localhost:3333/memories
+Content-Type: application/json
+
+{
+  "content": "test",
+  "coverUrl": "https://github.com/lucasouzamil.png",
+  "isPublic": 1
+}
+
+###
+PUT http://localhost:3333/memories/ec7d9700-225f-44ac-b508-e0a6789aae09
+Content-Type: application/json
+
+{
+  "content": "test2",
+  "coverUrl": "https://github.com/lucasouzamil.png",
+  "isPublic": 1
+}
+
+###
+DELETE  http://localhost:3333/memories/530c2b23-f83a-4a48-974f-3df945966b86
