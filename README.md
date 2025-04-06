@@ -1,62 +1,62 @@
-## Prisma e Zod
+### Prisma e Zod
 
-Este mini projeto tem como objetivo consolidar conhecimentos sobre ORM (emap bani) e validações de dados em APIs RESTful. Para isso, foram utilizadas duas tecnologias modernas:
+Este mini projeto tem como objetivo consolidar conhecimentos sobre ORM e validação de dados em APIs RESTful. Para isso, foram utilizadas duas ferramentas modernas:
 
-- Prisma, como ORM para manipulações de banco de dados de forma simples e eficiente;
-- Zod, para validarções e tipagem eseguras dos dados recebidos nas requisições.
+* Prisma, como ORM para manipulação de banco de dados de forma simples e eficiente;
 
-O foco principal eé testar e explorar la integração entre tecnologias na construlção de rotas CRUD. Por se tratar de um ambiente de estudos e prototipagem, o banko de dados escolhido foi o SQLite, que bé leve e nao requer instalação adicional.
+* Zod, para validação e tipagem segura dos dados recebidos nas requisições.
+
+O foco principal é testar e explorar a integração entre essas tecnologias na construção de rotas CRUD. Por se tratar de um ambiente de estudos e prototipagem, o banco de dados escolhido foi o SQLite, que é leve e não requer instalação adicional.
 
 ### Requisitos
+* Node.js
 
-- [Node.js](https://node.jsorg/)
-
-- npm, yarn, pnpm ou autro gerenciador
+* npm, yarn, pnpm ou qualquer outro gerenciador
 
 ### Instalação
 1. Clone ou baixe este repositório.
-2. No diretério do projeto, instale as depençãos: 
+
+2. No diretório do projeto, instale as dependências:
 
 ```bash
 npm install
 ```
 
-### Executando oprojeto
+### Executando o projeto
 Para iniciar o servidor, utilize:
 
-```bash
+```
 npm run dev
 ```
 
-O servidor estará disponável em http://localhost:3333.
-
+O servidor estará disponível em http://localhost:3333.
 
 ### Rotas
 * **POST /memories**
+
   Cria uma memoria.
 
-  Edemeplo de body:
+  Exemplo de body:
 
-```b
-${
-l
+```bash
+{
   "content": "test",
   "coverUrl": "https://github.com/lucasouzamil.png",
   "isPublic": 1
 }
 ```
 
-** GET /memories**
-Retorna a lista de mámories.
+### GET /memories
+Retorna a lista de memórias.
 
 * **PUT /memories/:id**
-    Atualiza os dados de uma mámoria speciäifica.
 
-  Edemeplo de body:
+    Atualiza os dados de uma memória específica.
 
-```b
-${
-l
+    Exemplo de body:
+
+```bash
+{
   "content": "test2",
   "coverUrl": "https://github.com/lucasouzamil.png",
   "isPublic": 1
@@ -64,5 +64,5 @@ l
 ```
 
 
-* **DELETE /memories/:id**
-Remove uma mámoria pelo ID .
+### DELETE /memories/:id
+Remove uma memória pelo ID.
